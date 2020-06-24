@@ -22,9 +22,7 @@ let PersonalDet = props => {
     return (
         <React.Fragment>
             <Form onSubmit={handleSubmit}>
-                <FormGroup>
-                    Personal Details Form
-                 </FormGroup>
+                <FormGroup> Personal Details Form </FormGroup>
                 < FormGroup >
                     <Field
                         name="firstname"
@@ -32,8 +30,7 @@ let PersonalDet = props => {
                         type="text"
                         label="First Name"
                         value={firstname}
-                        onChange={(e) => setFirstname(e.target.value)}
-                    />
+                        onChange={(e) => setFirstname(e.target.value)} />
                 </FormGroup >
                 <FormGroup>
                     <Field
@@ -42,9 +39,7 @@ let PersonalDet = props => {
                         type="text"
                         label="Last Name"
                         value={lastname}
-                        onChange={(e) => setLastname(e.target.value)}
-                    />
-
+                        onChange={(e) => setLastname(e.target.value)} />
                 </FormGroup>
                 <FormGroup>
                     <Field
@@ -53,8 +48,7 @@ let PersonalDet = props => {
                         type="email"
                         label="Email Id"
                         value={email}
-                        onChange={(e) => setEmailid(e.target.value)}
-                    />
+                        onChange={(e) => setEmailid(e.target.value)} />
                 </FormGroup> 
                 <FormGroup>
                     <Field
@@ -63,21 +57,18 @@ let PersonalDet = props => {
                         type="date"
                         label="Date of Birth"
                         value={dob}
-                        onChange={(e) => setDateofbirth(e.target.value)}
-                    />                 
+                        onChange={(e) => setDateofbirth(e.target.value)} />                 
                 </FormGroup>                
                 <FormGroup>
                     <Label>Gender</Label>
                     <Label>
                         <Field name="gender" component="input" type="radio" value="Male"  />
-                        {' '}
-            Male
-          </Label>
+                        {' '}  Male
+                    </Label>
                     <Label>
                         <Field name="gender" component="input" type="radio" value="Female"  />
-                        {' '}
-            Female
-          </Label>              
+                        {' '} Female
+                     </Label>              
                 <Field name="gender" component={renderError} />
                 </FormGroup>
                 <FormGroup>

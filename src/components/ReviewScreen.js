@@ -18,9 +18,7 @@ let ReviewScreen = props => {
     return (
         <React.Fragment>
             <Form >
-                <FormGroup>
-                    Review Personal Details 
-                 </FormGroup>
+                <FormGroup>  Review Personal Details  </FormGroup>
                 <FormGroup>
                     <Label>First Name</Label>
                     <Field1
@@ -28,8 +26,7 @@ let ReviewScreen = props => {
                         component="input"
                         type="text"
                         disabled={true}
-                        defaultValue={data.firstname}
-                    />
+                        defaultValue={data.firstname}  />
                 </FormGroup>
                 <FormGroup>
                     <Label>Last Name</Label>
@@ -38,10 +35,8 @@ let ReviewScreen = props => {
                         component="input"
                         type="text"
                         disabled={true}
-                        defaultValue={data.lastname}
-                    />
+                        defaultValue={data.lastname} />
                 </FormGroup>
-
                 <FormGroup>
                     <Label>Email Id</Label>
                     <Field1
@@ -49,11 +44,8 @@ let ReviewScreen = props => {
                         component="input"
                         type="email"
                         disabled={true}
-                        defaultValue={data.email}
-                    />
-
+                        defaultValue={data.email}  />
                 </FormGroup>
-
                 < FormGroup >
                     <Label>Date of Birth</Label>
                     <Field1
@@ -61,9 +53,8 @@ let ReviewScreen = props => {
                         component="input"
                         type="date"
                         disabled={true}
-                        defaultValue={data.dob}
-                    />
-
+                        defaultValue={data.dob} />
+                
                 </FormGroup >
 
                 <FormGroup>
@@ -73,12 +64,9 @@ let ReviewScreen = props => {
                         component="input"
                         type="text"
                         disabled={true}
-                        defaultValue={data.gender}
-                    />
+                        defaultValue={data.gender}   />
                 </FormGroup>
-                <FormGroup>
-                    Review Employment Details 
-                 </FormGroup>
+                <FormGroup>  Review Employment Details   </FormGroup>
                 <FormGroup>
                     <Label>Employee Id</Label>
                     <Field1
@@ -86,22 +74,24 @@ let ReviewScreen = props => {
                         component="input"
                         type="text"
                         disabled={true}
-                        defaultValue={data.empid}
-                    />
+                        defaultValue={data.empid}  />
                 </FormGroup>
-
                 <FormGroup>
                     <Label>Company Email Id</Label>
-                    <Field1 name="oemailid" component="input" type="email" disabled={true}
-                        defaultValue={data.oemailid}
-                         />
+                    <Field1
+                        name="oemailid"
+                        component="input"
+                        type="email"
+                        disabled={true} />
                 </FormGroup>
 
                 <FormGroup>
                     <Label>Designation</Label>
-                    <Field1 name="designation" component="input" disabled={true}
-                        defaultValue={data.designation}
-                         />
+                    <Field1
+                        name="designation"
+                        component="input"
+                        disabled={true}
+                        defaultValue={data.designation}  />
                 </FormGroup>
                
                 <Button type="button" primary onClick={previousPage}>Employee Details </Button >
@@ -118,7 +108,6 @@ let ReviewScreen = props => {
 ReviewScreen = reduxForm({
     form: 'form',// a unique identifier for this form
 })(ReviewScreen);
-
 
 
 function mapStateToProps(val) {

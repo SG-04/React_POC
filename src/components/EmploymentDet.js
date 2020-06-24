@@ -29,9 +29,7 @@ let EmploymentDet = props => {
 
         <React.Fragment>
             <Form onSubmit={handleSubmit}>
-                <FormGroup>
-                    Employment Details Form
-                 </FormGroup>
+                <FormGroup>Employment Details Form</FormGroup>
                 <FormGroup>
                     <Field
                         name="empid"
@@ -39,20 +37,22 @@ let EmploymentDet = props => {
                         type="text"
                         label="Employee Id"
                         value={empid}
-                        onChange={(e) => setEmpid(e.target.value)}
-                    />
+                        onChange={(e) => setEmpid(e.target.value)}  />
+                </FormGroup>              
+                <FormGroup>
+                    <Field
+                        name="oemailid"
+                        component={renderField}
+                        type="email"
+                        label="Company Email Id"
+                        value={oemailid}
+                        onChange={(e) => setOemailid(e.target.value)} />
                 </FormGroup>
-
-                    
-               <FormGroup>
-                            <Field name="oemailid" component={renderField} type="email" label="Company Email Id"  value={oemailid}
-                                onChange={(e) => setOemailid(e.target.value)} />
-                </FormGroup>
-
                 <FormGroup>
                     <Label>Designation</Label>
-                    <Field name="designation" component={renderDesignation} 
-                        />
+                    <Field
+                        name="designation"
+                        component={renderDesignation}  />
 
                 </FormGroup>
                 <Button type="button" primary onClick={previousPage}>Previous</Button >
