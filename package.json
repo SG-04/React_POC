@@ -3,12 +3,25 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@feuer/react-tabs": "^0.1.8",
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.5.0",
     "@testing-library/user-event": "^7.2.1",
+    "little-state-machine": "^3.0.2",
+    "moment": "^2.27.0",
     "react": "^16.13.1",
+    "react-datepicker": "^3.0.0",
     "react-dom": "^16.13.1",
-    "react-scripts": "3.4.1"
+    "react-hook-form": "^5.7.2",
+    "react-moment": "^0.9.7",
+    "react-redux": "^7.2.0",
+    "react-router-dom": "^5.2.0",
+    "react-scripts": "3.4.1",
+    "react-stepper-horizontal": "^1.0.11",
+    "react-widgets": "^4.5.0",
+    "redux": "^4.0.5",
+    "redux-form": "^8.3.6",
+    "styled-components": "^5.1.1"
   },
   "scripts": {
     "start": "react-scripts start",
