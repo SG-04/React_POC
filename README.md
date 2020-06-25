@@ -1,5 +1,8 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+
+### You can visit the deployed app, at [http://SG-04.github.io/React_POC](http://SG-04.github.io/React_POC)
+
 ## Available Scripts
 
 In the project directory, you can run:
