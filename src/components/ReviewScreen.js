@@ -81,8 +81,9 @@ let ReviewScreen = props => {
                     <Field1
                         name="oemailid"
                         component="input"
-                        type="email"
-                        disabled={true} />
+                        type="text"
+                        disabled={true}
+                        defaultValue={data.oemailid}/>
                 </FormGroup>
 
                 <FormGroup>
